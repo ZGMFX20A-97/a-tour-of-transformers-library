@@ -1,0 +1,237 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.7"
+  },
+  "cells": [
+    {
+      "id": "Xrnq",
+      "code_hash": "030ea862af2273c4fc2e6a1bd1dd17a1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YtXC",
+      "code_hash": "41b7ea7ef2587e0c5dab71073ec0e203",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u3069\u3093\u306a\u30bf\u30b9\u30af\u304c\u3067\u304d\u308b\u306e\u304b\u3092\u78ba\u8a8d\u3059\u308b</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "QWck",
+      "code_hash": "c558a6a1bcac8684787829152e779d26",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "audio-classification audio\nautomatic-speech-recognition multimodal\ntext-to-audio text\nfeature-extraction multimodal\ntext-classification text\ntoken-classification text\nquestion-answering text\ntable-question-answering text\nvisual-question-answering multimodal\ndocument-question-answering multimodal\nfill-mask text\nsummarization text\ntranslation text\ntext2text-generation text\ntext-generation text\nzero-shot-classification text\nzero-shot-image-classification multimodal\nzero-shot-audio-classification multimodal\nimage-classification image\nimage-feature-extraction image\nimage-segmentation multimodal\nimage-to-text multimodal\nimage-text-to-text multimodal\nobject-detection multimodal\nzero-shot-object-detection multimodal\ndepth-estimation image\nvideo-classification video\nmask-generation multimodal\nimage-to-image image\nkeypoint-matching image\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "zOYA",
+      "code_hash": "a20394d64c6cb63ef996e7558e34426e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"piepeline\">piepeline\u306e\u4f5c\u6210\u3068\u4f7f\u3044\u65b9</h3>\n<span class=\"paragraph\">\u30bf\u30b9\u30af\u306e\u7a2e\u985e\u3067pipeline\u3092\u4f5c\u6210\u3059\u308b\u3001\u30c7\u30d5\u30a9\u30eb\u30c8\u306f\u82f1\u8a9e\u306e\u30e2\u30c7\u30eb(DISTIL-BERT)</span>\n<span class=\"paragraph\">\u30e2\u30c7\u30eb\u3092\u6307\u5b9a\u305b\u305a\u306b\u4f5c\u308b\u306e\u306f\u3042\u307e\u308a\u826f\u304f\u306a\u3044</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zinS",
+      "code_hash": "c00e2d1bd08f881a82fc8790c6da2dac",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "No model was supplied, defaulted to distilbert/distilbert-base-uncased-finetuned-sst-2-english and revision 714eb0f (https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english).\nUsing a pipeline without specifying a model name and revision in production is not recommended.\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Device set to use mps:0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "hJbK",
+      "code_hash": "c42caa26caee226fbefab5dd7dc7f914",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"label\": \"POSITIVE\", \"score\": \"text/plain+float:0.9998525381088257\"}]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TJKa",
+      "code_hash": "f1b59a0bf5bbaaa0115f0c4c98d76adc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30bf\u30b9\u30af\u306e\u7a2e\u985e\u3068\u30e2\u30c7\u30eb\u3092\u6307\u5b9a\u3057\u3066\u4f5c\u6210\u3059\u308b</h3>\n<span class=\"paragraph\">\u4e2d\u56fd\u8a9e\u306e\u30e2\u30c7\u30eb\u3092\u4f7f\u3063\u3066\u307f\u308b</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KhSc",
+      "code_hash": "aaa622f2417856491a96692693a99a72",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Device set to use mps:0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "yDKH",
+      "code_hash": "c3ab48dc65dab792e4aed486cbbc2491",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"label\": \"negative (stars 1, 2 and 3)\", \"score\": \"text/plain+float:0.8988224864006042\"}]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "djhu",
+      "code_hash": "d022f1c06dfb78644d924cb5f2c7a51d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pipeline\">\u4e88\u3081\u30e2\u30c7\u30eb\u3092\u30ed\u30fc\u30c9\u3057\u3066\u3001pipeline\u3092\u4f5c\u6210\u3059\u308b</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "GjhO",
+      "code_hash": "de9a2bb303527fde166f9e9e8d0a1ee1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Device set to use mps:0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "XkhD",
+      "code_hash": "df4151ff1c3b59bd2442098c5e4bb7d5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"label\": \"negative (stars 1, 2 and 3)\", \"score\": \"text/plain+float:0.9743660688400269\"}]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IeLC",
+      "code_hash": "259ebcd54584dbec79f114268ba33765",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>device(type=&#x27;mps&#x27;, index=0)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "e181efcf155eef21719f37511de1f32f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
