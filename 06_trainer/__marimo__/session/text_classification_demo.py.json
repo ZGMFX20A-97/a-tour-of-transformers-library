@@ -1,0 +1,420 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.7"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "040ea22d37d157976dd75eca331ea3b5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30c6\u30ad\u30b9\u30c8\u5206\u985e\u30e2\u30c7\u30eb\u306e\u30c7\u30e2</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "afddfb0e095bff73fe0fe78b24fbdf8c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "6d0f1cb3d8d544700cdfeb384f8fca60",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataset\">Dataset\u3092\u30ed\u30fc\u30c9\u3059\u308b</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "35b331bb397b280a8e094ba4e3d0eeb1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>Dataset({\n    features: [&#x27;label&#x27;, &#x27;review&#x27;],\n    num_rows: 7765\n})</pre>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rGenerating train split: 0 examples [00:00, ? examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rGenerating train split: 7766 examples [00:00, 107237.51 examples/s]\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rFilter:   0%|                                                                                         | 0/7766 [00:00<?, ? examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rFilter: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 7766/7766 [00:00<00:00, 141539.74 examples/s]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "PKri",
+      "code_hash": "390b39a1199bb6608fc992efcc57f76f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataset\">Dataset\u306e\u5207\u308a\u5206\u3051</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "2b8c14e20b4ec6ce9d6dec4f637fd633",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>DatasetDict({\n    train: Dataset({\n        features: [&#x27;label&#x27;, &#x27;review&#x27;],\n        num_rows: 6988\n    })\n    test: Dataset({\n        features: [&#x27;label&#x27;, &#x27;review&#x27;],\n        num_rows: 777\n    })\n})</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "29c0bf00812c10edd9479f852028a6c1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30c7\u30fc\u30bf\u306e\u524d\u51e6\u7406</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "7c408cc15d2d9b3d6166a59727f4f2a3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>DatasetDict({\n    train: Dataset({\n        features: [&#x27;input_ids&#x27;, &#x27;token_type_ids&#x27;, &#x27;attention_mask&#x27;, &#x27;labels&#x27;],\n        num_rows: 6988\n    })\n    test: Dataset({\n        features: [&#x27;input_ids&#x27;, &#x27;token_type_ids&#x27;, &#x27;attention_mask&#x27;, &#x27;labels&#x27;],\n        num_rows: 777\n    })\n})</pre>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:   0%|                                                                                            | 0/6988 [00:00<?, ? examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:  14%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e                                                                   | 1000/6988 [00:00<00:00, 9134.67 examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:  43%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589                                             | 3000/6988 [00:00<00:00, 8186.46 examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:  57%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f                                 | 4000/6988 [00:00<00:00, 6585.38 examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:  72%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c                      | 5000/6988 [00:00<00:00, 5669.71 examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:  86%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a           | 6000/6988 [00:00<00:00, 5685.53 examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 6988/6988 [00:01<00:00, 5635.62 examples/s]\rMap: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 6988/6988 [00:01<00:00, 6044.73 examples/s]\n\rMap:   0%|                                                                                             | 0/777 [00:00<?, ? examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 777/777 [00:00<00:00, 5340.51 examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 777/777 [00:00<00:00, 4660.34 examples/s]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "emfo",
+      "code_hash": "c897dedbfab0b57aaad32e77c469c167",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30e2\u30c7\u30eb\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "e7b0914ac4cc5f5f6a4d2beda1c4702e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Some weights of BertForSequenceClassification were not initialized from the model checkpoint at hfl/rbt3 and are newly initialized: ['classifier.bias', 'classifier.weight']\nYou should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "vBzt",
+      "code_hash": "6f297c763817433d688665766849678e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u8a55\u4fa1\u7528\u95a2\u6570\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "fcfdc1dca74970613c0718f26c8b6c2e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fpIa",
+      "code_hash": "e93b5690babe3ca027b48480415f5ec7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"trainingarguments\">TrainingArguments\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yRAJ",
+      "code_hash": "1b18ff897e4cefc63aa2fefe695cface",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>TrainingArguments(\n_n_gpu=1,\naccelerator_config={&#x27;split_batches&#x27;: False, &#x27;dispatch_batches&#x27;: None, &#x27;even_batches&#x27;: True, &#x27;use_seedable_sampler&#x27;: True, &#x27;non_blocking&#x27;: False, &#x27;gradient_accumulation_kwargs&#x27;: None, &#x27;use_configured_state&#x27;: False},\nadafactor=False,\nadam_beta1=0.9,\nadam_beta2=0.999,\nadam_epsilon=1e-08,\nauto_find_batch_size=False,\naverage_tokens_across_devices=True,\nbatch_eval_metrics=False,\nbf16=False,\nbf16_full_eval=False,\ndata_seed=None,\ndataloader_drop_last=False,\ndataloader_num_workers=0,\ndataloader_persistent_workers=False,\ndataloader_pin_memory=True,\ndataloader_prefetch_factor=None,\nddp_backend=None,\nddp_broadcast_buffers=None,\nddp_bucket_cap_mb=None,\nddp_find_unused_parameters=None,\nddp_timeout=1800,\ndebug=[],\ndeepspeed=None,\ndisable_tqdm=False,\ndo_eval=True,\ndo_predict=False,\ndo_train=False,\neval_accumulation_steps=None,\neval_delay=0,\neval_do_concat_batches=True,\neval_on_start=False,\neval_steps=None,\neval_strategy=IntervalStrategy.EPOCH,\neval_use_gather_object=False,\nfp16=False,\nfp16_backend=auto,\nfp16_full_eval=False,\nfp16_opt_level=O1,\nfsdp=[],\nfsdp_config={&#x27;min_num_params&#x27;: 0, &#x27;xla&#x27;: False, &#x27;xla_fsdp_v2&#x27;: False, &#x27;xla_fsdp_grad_ckpt&#x27;: False},\nfsdp_min_num_params=0,\nfsdp_transformer_layer_cls_to_wrap=None,\nfull_determinism=False,\ngradient_accumulation_steps=1,\ngradient_checkpointing=False,\ngradient_checkpointing_kwargs=None,\ngreater_is_better=True,\ngroup_by_length=False,\nhalf_precision_backend=auto,\nhub_always_push=False,\nhub_model_id=None,\nhub_private_repo=None,\nhub_revision=None,\nhub_strategy=HubStrategy.EVERY_SAVE,\nhub_token=&lt;HUB_TOKEN&gt;,\nignore_data_skip=False,\ninclude_for_metrics=[],\ninclude_inputs_for_metrics=False,\ninclude_num_input_tokens_seen=no,\ninclude_tokens_per_second=False,\njit_mode_eval=False,\nlabel_names=None,\nlabel_smoothing_factor=0.0,\nlearning_rate=2e-05,\nlength_column_name=length,\nliger_kernel_config=None,\nload_best_model_at_end=False,\nlocal_rank=0,\nlog_level=passive,\nlog_level_replica=warning,\nlog_on_each_node=True,\nlogging_dir=./checkpoints/runs/Jan04_16-50-50_Mac,\nlogging_first_step=False,\nlogging_nan_inf_filter=True,\nlogging_steps=10,\nlogging_strategy=IntervalStrategy.STEPS,\nlr_scheduler_kwargs={},\nlr_scheduler_type=SchedulerType.LINEAR,\nmax_grad_norm=1.0,\nmax_steps=-1,\nmetric_for_best_model=f1,\nmp_parameters=,\nneftune_noise_alpha=None,\nno_cuda=False,\nnum_train_epochs=3.0,\noptim=OptimizerNames.ADAMW_TORCH_FUSED,\noptim_args=None,\noptim_target_modules=None,\noutput_dir=./checkpoints,\noverwrite_output_dir=False,\nparallelism_config=None,\npast_index=-1,\nper_device_eval_batch_size=128,\nper_device_train_batch_size=64,\nprediction_loss_only=False,\nproject=huggingface,\npush_to_hub=False,\npush_to_hub_model_id=None,\npush_to_hub_organization=None,\npush_to_hub_token=&lt;PUSH_TO_HUB_TOKEN&gt;,\nray_scope=last,\nremove_unused_columns=True,\nreport_to=[],\nrestore_callback_states_from_checkpoint=False,\nresume_from_checkpoint=None,\nrun_name=None,\nsave_on_each_node=False,\nsave_only_model=False,\nsave_safetensors=True,\nsave_steps=500,\nsave_strategy=SaveStrategy.STEPS,\nsave_total_limit=None,\nseed=42,\nskip_memory_metrics=True,\ntf32=None,\ntorch_compile=False,\ntorch_compile_backend=None,\ntorch_compile_mode=None,\ntorch_empty_cache_steps=None,\ntorchdynamo=None,\ntpu_metrics_debug=False,\ntpu_num_cores=None,\ntrackio_space_id=trackio,\nuse_cpu=False,\nuse_legacy_prediction_loop=False,\nuse_liger_kernel=False,\nuse_mps_device=False,\nwarmup_ratio=0.0,\nwarmup_steps=0,\nweight_decay=0.01,\n)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "gyYT",
+      "code_hash": "fcfc429d8b553969b95b190efee1c8c9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"trainer\">Trainer\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lswM",
+      "code_hash": "39eecfea0f0f075dd427fbe39a4cdde2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "9eba99d3747eb8158d3546e277c30cb4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u8a13\u7df4\u3068\u691c\u8a3c</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IzlA",
+      "code_hash": "a673cfdf87b26c182c75e6ccba061053",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "interruption",
+          "evalue": "This cell was interrupted and needs to be re-run",
+          "traceback": []
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...\nTo disable this warning, you can either:\n\t- Avoid using `tokenizers` before the fork if possible\n\t- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...\nTo disable this warning, you can either:\n\t- Avoid using `tokenizers` before the fork if possible\n\t- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/var/folders/fn/kncqgb0s79z0qcxtgyq5z3v80000gn/T/marimo_45409/__marimo__cell_IzlA_.py&quot;</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">trainer</span><span class=\"o\">.</span><span class=\"n\">train</span><span class=\"p\">()</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/trainer.py&quot;</span>, line <span class=\"m\">2325</span>, in <span class=\"n\">train</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"n\">inner_training_loop</span><span class=\"p\">(</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/trainer.py&quot;</span>, line <span class=\"m\">2618</span>, in <span class=\"n\">_inner_training_loop</span>\n<span class=\"w\">    </span><span class=\"n\">batch_samples</span><span class=\"p\">,</span> <span class=\"n\">num_items_in_batch</span> <span class=\"o\">=</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">get_batch_samples</span><span class=\"p\">(</span><span class=\"n\">epoch_iterator</span><span class=\"p\">,</span> <span class=\"n\">num_batches</span><span class=\"p\">,</span> <span class=\"n\">args</span><span class=\"o\">.</span><span class=\"n\">device</span><span class=\"p\">)</span>\n<span class=\"w\">                                        </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/trainer.py&quot;</span>, line <span class=\"m\">5654</span>, in <span class=\"n\">get_batch_samples</span>\n<span class=\"w\">    </span><span class=\"n\">batch_samples</span><span class=\"o\">.</span><span class=\"n\">append</span><span class=\"p\">(</span><span class=\"nb\">next</span><span class=\"p\">(</span><span class=\"n\">epoch_iterator</span><span class=\"p\">))</span>\n<span class=\"w\">                         </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/accelerate/data_loader.py&quot;</span>, line <span class=\"m\">579</span>, in <span class=\"n\">__iter__</span>\n<span class=\"w\">    </span><span class=\"n\">next_batch</span> <span class=\"o\">=</span> <span class=\"nb\">next</span><span class=\"p\">(</span><span class=\"n\">dataloader_iter</span><span class=\"p\">)</span>\n<span class=\"w\">                 </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py&quot;</span>, line <span class=\"m\">732</span>, in <span class=\"n\">__next__</span>\n<span class=\"w\">    </span><span class=\"n\">data</span> <span class=\"o\">=</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">_next_data</span><span class=\"p\">()</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py&quot;</span>, line <span class=\"m\">788</span>, in <span class=\"n\">_next_data</span>\n<span class=\"w\">    </span><span class=\"n\">data</span> <span class=\"o\">=</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">_dataset_fetcher</span><span class=\"o\">.</span><span class=\"n\">fetch</span><span class=\"p\">(</span><span class=\"n\">index</span><span class=\"p\">)</span>  <span class=\"c1\"># may raise StopIteration</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py&quot;</span>, line <span class=\"m\">55</span>, in <span class=\"n\">fetch</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">collate_fn</span><span class=\"p\">(</span><span class=\"n\">data</span><span class=\"p\">)</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/data/data_collator.py&quot;</span>, line <span class=\"m\">271</span>, in <span class=\"n\">__call__</span>\n<span class=\"w\">    </span><span class=\"n\">batch</span> <span class=\"o\">=</span> <span class=\"n\">pad_without_fast_tokenizer_warning</span><span class=\"p\">(</span>\n<span class=\"w\">            </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/data/data_collator.py&quot;</span>, line <span class=\"m\">66</span>, in <span class=\"n\">pad_without_fast_tokenizer_warning</span>\n<span class=\"w\">    </span><span class=\"n\">padded</span> <span class=\"o\">=</span> <span class=\"n\">tokenizer</span><span class=\"o\">.</span><span class=\"n\">pad</span><span class=\"p\">(</span><span class=\"o\">*</span><span class=\"n\">pad_args</span><span class=\"p\">,</span> <span class=\"o\">**</span><span class=\"n\">pad_kwargs</span><span class=\"p\">)</span>\n<span class=\"w\">             </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/tokenization_utils_base.py&quot;</span>, line <span class=\"m\">3457</span>, in <span class=\"n\">pad</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"n\">BatchEncoding</span><span class=\"p\">(</span><span class=\"n\">batch_outputs</span><span class=\"p\">,</span> <span class=\"n\">tensor_type</span><span class=\"o\">=</span><span class=\"n\">return_tensors</span><span class=\"p\">)</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/tokenization_utils_base.py&quot;</span>, line <span class=\"m\">248</span>, in <span class=\"n\">__init__</span>\n<span class=\"w\">    </span><span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">convert_to_tensors</span><span class=\"p\">(</span><span class=\"n\">tensor_type</span><span class=\"o\">=</span><span class=\"n\">tensor_type</span><span class=\"p\">,</span> <span class=\"n\">prepend_batch_axis</span><span class=\"o\">=</span><span class=\"n\">prepend_batch_axis</span><span class=\"p\">)</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/tokenization_utils_base.py&quot;</span>, line <span class=\"m\">795</span>, in <span class=\"n\">convert_to_tensors</span>\n<span class=\"w\">    </span><span class=\"n\">tensor</span> <span class=\"o\">=</span> <span class=\"n\">as_tensor</span><span class=\"p\">(</span><span class=\"n\">value</span><span class=\"p\">)</span>\n<span class=\"w\">             </span><span class=\"pm\">^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/tokenization_utils_base.py&quot;</span>, line <span class=\"m\">740</span>, in <span class=\"n\">as_tensor</span>\n<span class=\"w\">    </span><span class=\"k\">if</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">flatten</span><span class=\"p\">(</span><span class=\"n\">value</span><span class=\"p\">))</span> <span class=\"o\">==</span> <span class=\"mi\">0</span> <span class=\"ow\">and</span> <span class=\"n\">dtype</span> <span class=\"ow\">is</span> <span class=\"kc\">None</span><span class=\"p\">:</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/tokenization_utils_base.py&quot;</span>, line <span class=\"m\">95</span>, in <span class=\"n\">flatten</span>\n<span class=\"w\">    </span><span class=\"n\">res</span><span class=\"o\">.</span><span class=\"n\">extend</span><span class=\"p\">(</span><span class=\"n\">flatten</span><span class=\"p\">(</span><span class=\"n\">sub_arr</span><span class=\"p\">))</span>\n<span class=\"w\">               </span><span class=\"pm\">^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/transformers/tokenization_utils_base.py&quot;</span>, line <span class=\"m\">97</span>, in <span class=\"n\">flatten</span>\n<span class=\"w\">    </span><span class=\"n\">res</span><span class=\"o\">.</span><span class=\"n\">append</span><span class=\"p\">(</span><span class=\"n\">sub_arr</span><span class=\"p\">)</span>\n  File <span class=\"nb\">&quot;/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/marimo/_runtime/handlers.py&quot;</span>, line <span class=\"m\">48</span>, in <span class=\"n\">interrupt_handler</span>\n<span class=\"w\">    </span><span class=\"k\">raise</span> <span class=\"n\">MarimoInterrupt</span>\n<span class=\"gr\">KeyboardInterrupt</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "ePSF",
+      "code_hash": "1b6a2f4c9097ab0d3f6199ee9fd2e351",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "interruption",
+          "evalue": "This cell was interrupted and needs to be re-run",
+          "traceback": []
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "33a60c0f58daaa4e67e82d0a97b2d9fd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u63a8\u8ad6</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "ba86827cc215bed6da592ab6d3ddd4ac",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "interruption",
+          "evalue": "This cell was interrupted and needs to be re-run",
+          "traceback": []
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.7"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SdSq",
+      "code_hash": "040ea22d37d157976dd75eca331ea3b5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30c6\u30ad\u30b9\u30c8\u5206\u985e\u30e2\u30c7\u30eb\u306e\u30c7\u30e2</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Udiy",
+      "code_hash": "554364472c88e403858ced7ec2a1bede",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UFQy",
+      "code_hash": "cbedd7f92cf4994a435c83be0097f888",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataset\">Dataset\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aBbN",
+      "code_hash": "63b9b8b8c26d5455fa921345d10da5a0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kUPI",
+      "code_hash": "654786f1fa73e2f36f8b64d3a9fb929b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "('\u8ddd\u79bb\u5ddd\u6c99\u516c\u8def\u8f83\u8fd1,\u4f46\u662f\u516c\u4ea4\u6307\u793a\u4e0d\u5bf9,\u5982\u679c\u662f\"\u8521\u9646\u7ebf\"\u7684\u8bdd,\u4f1a\u975e\u5e38\u9ebb\u70e6.\u5efa\u8bae\u7528\u522b\u7684\u8def\u7ebf.\u623f\u95f4\u8f83\u4e3a\u7b80\u5355.', np.int64(1))\n('\u5546\u52a1\u5927\u5e8a\u623f\uff0c\u623f\u95f4\u5f88\u5927\uff0c\u5e8a\u67092M\u5bbd\uff0c\u6574\u4f53\u611f\u89c9\u7ecf\u6d4e\u5b9e\u60e0\u4e0d\u9519!', np.int64(1))\n('\u65e9\u9910\u592a\u5dee\uff0c\u65e0\u8bba\u53bb\u591a\u5c11\u4eba\uff0c\u90a3\u8fb9\u4e5f\u4e0d\u52a0\u98df\u54c1\u7684\u3002\u9152\u5e97\u5e94\u8be5\u91cd\u89c6\u4e00\u4e0b\u8fd9\u4e2a\u95ee\u9898\u4e86\u3002\u623f\u95f4\u672c\u8eab\u5f88\u597d\u3002', np.int64(1))\n('\u5bbe\u9986\u5728\u5c0f\u8857\u9053\u4e0a\uff0c\u4e0d\u5927\u597d\u627e\uff0c\u4f46\u8fd8\u597d\u5317\u4eac\u70ed\u5fc3\u540c\u80de\u5f88\u591a~\u5bbe\u9986\u8bbe\u65bd\u8ddf\u4ecb\u7ecd\u7684\u5dee\u4e0d\u591a\uff0c\u623f\u95f4\u5f88\u5c0f\uff0c\u786e\u5b9e\u633a\u5c0f\uff0c\u4f46\u52a0\u4e0a\u4f4e\u4ef7\u4f4d\u56e0\u7d20\uff0c\u8fd8\u662f\u65e0\u8d85\u6240\u503c\u7684\uff1b\u73af\u5883\u4e0d\u9519\uff0c\u5c31\u5728\u5c0f\u80e1\u540c\u5185\uff0c\u5b89\u9759\u6574\u6d01\uff0c\u6696\u6c14\u597d\u8db3-_-||\u3002\u3002\u3002\u5475\u8fd8\u6709\u4e00\u5927\u4f18\u52bf\u5c31\u662f\u4ece\u5bbe\u9986\u51fa\u53d1\uff0c\u6b65\u884c\u4e0d\u5230\u5341\u5206\u949f\u5c31\u53ef\u4ee5\u5230\u6885\u5170\u82b3\u6545\u5c45\u7b49\u7b49\uff0c\u4eac\u5473\u5c0f\u80e1\u540c\uff0c\u5317\u6d77\u8ddd\u79bb\u597d\u8fd1\u5462\u3002\u603b\u4e4b\uff0c\u4e0d\u9519\u3002\u63a8\u8350\u7ed9\u8282\u7ea6\u6d88\u8d39\u7684\u81ea\u52a9\u6e38\u670b\u53cb~\u6bd4\u8f83\u5212\u7b97\uff0c\u9644\u8fd1\u7279\u8272\u5c0f\u5403\u5f88\u591a~', np.int64(1))\n('CBD\u4e2d\u5fc3,\u5468\u56f4\u6ca1\u4ec0\u4e48\u5e97\u94fa,\u8bf45\u661f\u6709\u70b9\u52c9\u5f3a.\u4e0d\u77e5\u9053\u4e3a\u4ec0\u4e48\u536b\u751f\u95f4\u6ca1\u6709\u7535\u5439\u98ce', np.int64(1))\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "zDJT",
+      "code_hash": "390b39a1199bb6608fc992efcc57f76f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataset\">Dataset\u306e\u5207\u308a\u5206\u3051</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TWYr",
+      "code_hash": "155d626a931af1a1265d2d54f168f743",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[6989, 776]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PTsB",
+      "code_hash": "d0351027b72d8fd01d037a47dcfd5ab8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataloader\">DataLoader\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "JOnj",
+      "code_hash": "918de9bc247169ebaeae379510f7491e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HUFJ",
+      "code_hash": "3f8d353a4a74a09e2f903496161da352",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ipWs",
+      "code_hash": "29a87aa88874704f38764d79221ede36",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[0, \"text/plain:{'input_ids': tensor([[ 101, 5018,  753,  ..., 7770, 2209,  102],\\n        [ 101, 4635, 1921,  ...,    0,    0,    0],\\n        [ 101,  769, 6858,  ...,    0,    0,    0],\\n        ...,\\n        [ 101,  677, 5381,  ...,    0,    0,    0],\\n        [ 101,  122,  119,  ...,  117, 2769,  102],\\n        [ 101, 2347, 5307,  ..., 2376,  749,  102]]), 'token_type_ids': tensor([[0, 0, 0,  ..., 0, 0, 0],\\n        [0, 0, 0,  ..., 0, 0, 0],\\n        [0, 0, 0,  ..., 0, 0, 0],\\n        ...,\\n        [0, 0, 0,  ..., 0, 0, 0],\\n        [0, 0, 0,  ..., 0, 0, 0],\\n        [0, 0, 0,  ..., 0, 0, 0]]), 'attention_mask': tensor([[1, 1, 1,  ..., 1, 1, 1],\\n        [1, 1, 1,  ..., 0, 0, 0],\\n        [1, 1, 1,  ..., 0, 0, 0],\\n        ...,\\n        [1, 1, 1,  ..., 0, 0, 0],\\n        [1, 1, 1,  ..., 1, 1, 1],\\n        [1, 1, 1,  ..., 1, 1, 1]]), 'labels': tensor([1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1,\\n        1, 1, 1, 1, 0, 0, 0, 1])}\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OhhK",
+      "code_hash": "0f08ce35bc251d747efbe8c88185cc9c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30e2\u30c7\u30eb\u3068\u30aa\u30d7\u30c6\u30a3\u30de\u30a4\u30b6\u30fc\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZuqX",
+      "code_hash": "7b0a7b7a1a88a8337a0f0032e2068ac1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>True</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "laUH",
+      "code_hash": "159e338f5dd5313a0462d718b187dc2e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...\nTo disable this warning, you can either:\n\t- Avoid using `tokenizers` before the fork if possible\n\t- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Some weights of BertForSequenceClassification were not initialized from the model checkpoint at hfl/rbt3 and are newly initialized: ['classifier.bias', 'classifier.weight']\nYou should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "NKtS",
+      "code_hash": "9eba99d3747eb8158d3546e277c30cb4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u8a13\u7df4\u3068\u691c\u8a3c</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bSSl",
+      "code_hash": "8f4f4e3f8190b684ddb7815423ce9439",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CuNC",
+      "code_hash": "9c56a1ad04fc887908daef717af5e24d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 0,global_step: 0,loss: 0.7991685271263123\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...\nTo disable this warning, you can either:\n\t- Avoid using `tokenizers` before the fork if possible\n\t- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 0,global_step: 100,loss: 0.2820088267326355\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 0,global_step: 200,loss: 0.37622225284576416\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 0, acc: 0.873711347579956\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 1,global_step: 300,loss: 0.2883165776729584\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 1,global_step: 400,loss: 0.3147830367088318\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 1, acc: 0.8917526006698608\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 2,global_step: 500,loss: 0.11922497302293777\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 2,global_step: 600,loss: 0.2803550958633423\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "epoch: 2, acc: 0.8814433217048645\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Vnaz",
+      "code_hash": "33a60c0f58daaa4e67e82d0a97b2d9fd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u63a8\u8ad6</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CFsa",
+      "code_hash": "5aa51537fac9693d7ae3e764ea89afe4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "input: \u6211\u89c9\u5f97\u8fd9\u5bb6\u9152\u5e97\u4e0d\u9519\uff0c\u996d\u5f88\u597d\u5403\uff01 \u63a8\u8ad6\u306e\u7d50\u679c: \u30dd\u30b8\u30c6\u30a3\u30d6\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "biBa",
+      "code_hash": "55d1864793f0865620ece6fc2bb687f3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"_1\"></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ARsu",
+      "code_hash": "5ac1d4012c0d7d727df16d19eeb21615",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"label\": \"\\u30dd\\u30b8\\u30c6\\u30a3\\u30d6\", \"score\": \"text/plain+float:0.6605592966079712\"}]"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Device set to use mps:0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}

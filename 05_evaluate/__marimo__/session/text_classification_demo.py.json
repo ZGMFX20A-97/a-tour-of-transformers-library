@@ -1,0 +1,210 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.7"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "040ea22d37d157976dd75eca331ea3b5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30c6\u30ad\u30b9\u30c8\u5206\u985e\u30e2\u30c7\u30eb\u306e\u30c7\u30e2</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "c12a4ade3094dcdf67f57cd44a45e0a9",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "6d0f1cb3d8d544700cdfeb384f8fca60",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataset\">Dataset\u3092\u30ed\u30fc\u30c9\u3059\u308b</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "35b331bb397b280a8e094ba4e3d0eeb1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "390b39a1199bb6608fc992efcc57f76f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataset\">Dataset\u306e\u5207\u308a\u5206\u3051</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "2b8c14e20b4ec6ce9d6dec4f637fd633",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "d0351027b72d8fd01d037a47dcfd5ab8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dataloader\">DataLoader\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "7c408cc15d2d9b3d6166a59727f4f2a3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "93989c3317e4e6155c56f9e895efd0f1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "e271ece9f6138cf3ea8d0b5a6c165c93",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "0f08ce35bc251d747efbe8c88185cc9c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30e2\u30c7\u30eb\u3068\u30aa\u30d7\u30c6\u30a3\u30de\u30a4\u30b6\u30fc\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "7b0a7b7a1a88a8337a0f0032e2068ac1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "159e338f5dd5313a0462d718b187dc2e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "9eba99d3747eb8158d3546e277c30cb4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u8a13\u7df4\u3068\u691c\u8a3c</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OqUx",
+      "code_hash": "d722430e23cefb02d9ac40facc27ae6f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rDownloading builder script: 0.00B [00:00, ?B/s]\rDownloading builder script: 6.79kB [00:00, 5.51MB/s]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "bf1ff9a297e8c991a1584f45db7c1ad7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "9c56a1ad04fc887908daef717af5e24d",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "33a60c0f58daaa4e67e82d0a97b2d9fd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u63a8\u8ad6</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "5aa51537fac9693d7ae3e764ea89afe4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "373cee7ed486608aa94d372fbce7c6b9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"pipeline\">pipeline\u3092\u4f7f\u3063\u3066\u307f\u308b</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "5ac1d4012c0d7d727df16d19eeb21615",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
